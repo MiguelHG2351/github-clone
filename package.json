@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start:app": "npm -w app next start",
+    "build:app": "npm -w api next build",
+    "build:api": "npm -w api esbuild --bundle index.js -o api/index.js",
+    "dev:app": "npm -w app next dev"
   },
   "repository": {
     "type": "git",
