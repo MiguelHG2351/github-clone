@@ -21,10 +21,10 @@ export default function Sidenav() {
                         </svg>
                     </a>
                 </Link>
-                <span>Dashboard</span>
+                <span className='align-middle'>Dashboard</span>
             </div>
             <div className="options-container flex">
-                <div className="empty w-11 h-11"></div>
+                <div className="empty w-11 h-11 md:w-0"></div>
                 <div className="list-options p-2 bg-gray-blue border-b border-red-800 flex-1 md:border-none">
                     <button className="rounded-full border-none bg-transparent text-gray-light hover:bg-blue-50 hover:text-blue-700 active:shadow-innerLink active:text-blue-700 disabled:text-cool-gray-500 px-2 text-xs h-6 whitespace-nowrap  focus:outline-none">
                         <svg
