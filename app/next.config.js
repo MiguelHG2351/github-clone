@@ -1,11 +1,17 @@
-
 /**
  * @type {import('next').NextConfig}
  */
 
- const nextConfig = {
+const nextConfig = {
     poweredByHeader: false,
-    experimental: { images: { allowFutureImage: true } }
-}
+    experimental: {
+        images: {
+            allowFutureImage: true,
+        },
+    },
+    images: {
+        domains: ['avatars.githubusercontent.com'],
+    }
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;
