@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { useState } from 'react';
 
-import classNames from 'classnames';
+import classnames from 'classnames';
 import Image from 'next/future/image';
 
 import ProfileHeader from './Profile';
@@ -27,7 +27,7 @@ export default function Header() {
         }
     }
 
-    const headerClass = classNames(
+    const headerClass = classnames(
         'fixed md:static flex flex-col justify-between h-screen box-border z-20 bg-blue-dark w-auto',
         {
             'translate-x-0': openMenu.isOpen,
@@ -36,7 +36,7 @@ export default function Header() {
         }
     );
 
-    const buttonMenuClass = classNames(
+    const buttonMenuClass = classnames(
         'border-none -right-11 bg-blue-dark text-white w-11 max-h-11 h-11 md:hidden',
         {
             absolute: !openMenu.isOpen,
