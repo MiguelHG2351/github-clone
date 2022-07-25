@@ -1,28 +1,11 @@
-import Link from 'next/link';
+// import Link from 'next/link';
+import Breadcrumb from "./Breadcrumb";
 
 export default function Sidenav() {
+    
     return (
         <section className="options flex-col-reverse bg-light-blue flex items-stretch justify-between sticky md:static">
-            <div className="breadcrumb p-2">
-                <Link href="/">
-                    <a className="inline-block">
-                        <svg
-                            className="align-middle"
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="20"
-                            height="20"
-                            viewBox="0 0 20 20"
-                            fill="none"
-                        >
-                            <path
-                                d="M8.33335 16.6667V11.6667H11.6667V16.6667H15.8334V10H18.3334L10 2.5L1.66669 10H4.16669V16.6667H8.33335Z"
-                                fill="#ACACAC"
-                            />
-                        </svg>
-                    </a>
-                </Link>
-                <span className='align-middle'>Dashboard</span>
-            </div>
+            <Breadcrumb />
             <div className="options-container flex">
                 <div className="empty w-11 h-11 md:w-0"></div>
                 <div className="list-options p-2 bg-gray-blue border-b border-red-800 flex-1 md:border-none">
