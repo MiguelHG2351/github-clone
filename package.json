@@ -4,10 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start:app": "npm -w app next start",
-    "build:app": "npm -w api next build",
+    "start:app": "npm -w app start",
+    "build:app": "npm -w api run build",
     "build:api": "npm -w api esbuild --bundle index.js -o api/index.js",
-    "dev:app": "npm -w app next dev"
+    "dev:app": "npm -w app run dev"
   },
   "repository": {
     "type": "git",
@@ -23,5 +23,8 @@
   "workspaces": [
     "app",
     "api"
-  ]
+  ],
+  "dependencies": {
+    "classnames": "^2.3.1"
+  }
 }
