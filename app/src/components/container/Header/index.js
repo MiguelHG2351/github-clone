@@ -28,10 +28,10 @@ export default function Header() {
     }
 
     const headerClass = classnames(
-        'fixed md:static flex flex-col justify-between h-screen box-border z-20 bg-blue-dark w-auto',
+        'fixed box-border flex flex-col justify-between  h-screen z-20 bg-blue-dark overflow-y-auto w-auto md:static',
         {
             'translate-x-0': openMenu.isOpen,
-            '-translate-x-full': !openMenu.isOpen,
+            '-translate-x-full md:translate-x-0': !openMenu.isOpen,
             'transition-transform': openMenu.isFirstOpen,
         }
     );
