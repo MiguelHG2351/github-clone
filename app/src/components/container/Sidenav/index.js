@@ -4,7 +4,7 @@ import Breadcrumb from "./Breadcrumb";
 export default function Sidenav() {
     
     return (
-        <section className="options flex-col-reverse bg-light-blue flex items-stretch justify-between sticky md:static">
+        <section className="options flex-col-reverse bg-light-blue flex items-stretch justify-between sticky z-10 md:static">
             <Breadcrumb />
             <div className="options-container flex">
                 <div className="empty w-11 h-11 md:w-0"></div>
