@@ -4,7 +4,7 @@ import React from 'react';
 
 export default function Breadcrumb() {
     const router = useRouter();
-    const routes = router.pathname.split('/').slice(1);
+    const routes = router.pathname.split('/').slice(2);
     console.log(routes);
 
     return (
